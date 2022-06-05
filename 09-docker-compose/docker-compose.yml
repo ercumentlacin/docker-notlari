@@ -1,0 +1,7 @@
+version: '3.4'
+services:
+  node-server:
+    container_name: my-node-server
+    build: . # normalde buraya image: node:14-slim yazilabilirdi ama biz kendi image 'imizi kullanmak istiyoruz
+    ports:
+      - 3001:3000 

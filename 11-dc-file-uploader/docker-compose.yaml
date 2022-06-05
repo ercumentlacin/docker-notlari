@@ -1,0 +1,10 @@
+version: '3.4'
+services:
+  uploader-app:
+    build: .
+    ports:
+      - 3000:3000
+    volumes:
+      - uploader-app-uploads:/uploads # herhangiBirIsim:Dockerfile.WORKDIR
+volumes:
+  uploader-app-uploads:
